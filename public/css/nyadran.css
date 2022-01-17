@@ -1,0 +1,157 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+  color: rgb(161, 161, 161);
+}
+
+.form-nyadran {
+  margin: auto;
+  width: 100%;
+  max-width: 620px;
+}
+
+.link-return{
+  color: rgb(161, 161, 161);
+  text-decoration: none;
+}
+.link-return:hover{
+  color: rgb(41, 41, 41);
+  text-decoration: none;
+}
+.form-login{
+  padding: 3rem;
+}
+
+.card{
+  outline: 0;
+  border: 0;
+  border-radius: 7px;
+  background-color: #fff;
+}
+.card__header {
+  flex-basis: 100%;
+  margin: 50px 0px 0px;
+}
+
+button:active, 
+button:focus {
+  -webkit-box-shadow: none;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+  outline: 0 !important;
+}
+
+.form-input-nyadran{
+  display: block;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.97);
+  color: #212121;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.form-input-nyadran:focus{
+  border-bottom: 1.5px solid #3FB8AF;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 70, 0);
+  outline: 0 !important;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-floating:focus-within{
+  color: #3FB8AF;
+}
+.btn-outline-primary{
+  border-color: #3FB8AF;
+  color: #3FB8AF;
+}
+.btn-outline-primary:hover{
+  color: white;
+  background-color: #3FB8AF;
+  border-color: #3FB8AF;
+}
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+
+}
+.btn-minus{
+    background-color: transparent;
+    border: 0;
+}
+.icon-minus{
+    font-size: 1.5rem;
+}
+.icon-add{
+    font-size: 1.5rem;
+}
+.form-select{
+    appearance: none;
+    --webkit-appearance: none;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .form-login{
+    padding: 1.7rem;
+  }
+  
+  .description{
+    font-size: 0.75rem;
+  }
+  .remember-me{
+    font-size: 0.75rem;
+  }
+  .form-signin {
+    padding: 15px;
+    margin: auto;
+    max-width: 350px;
+  }
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .description{
+    font-size: 1.1rem;
+  } 
+  .form-nyadran {
+    padding: 15px;
+    margin: auto;
+    max-width: 300px;
+  }
+  
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
