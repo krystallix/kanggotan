@@ -16,10 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
 
 Route::get('/home', 'HomeController@index');
 Route::get('/login', 'LoginController@index');
-Route::get('/nyadran', 'NyadranController@index');
+Route::get('/Haul-Massal', 'NyadranController@index');
+Route::get('/Haul-Massal/2022', 'NyadranController@nyadran2022')->name('nyadran2022');
 Route::post('/nyadran/submit', 'NyadranController@AjaxRequest');
+
 
 

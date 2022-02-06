@@ -15,6 +15,7 @@
 <body class="text-center">
     <main class="form-signin">
         <form method="post" id="form-login" class="requires-validation" novalidate>
+            @csrf
             {{-- <img class="mb-4" src="{{asset('img/logo.png')}}" alt="" width="72" height="57">
             <h1 class="h3 mb-3 fw-bold">Sign In</h1> --}}
             

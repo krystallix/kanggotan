@@ -27,34 +27,35 @@
                 <div class="form-login">
                     <div class="form-floating" >
                         {{-- <input type="hidden" name="_token" value="{{ csrf_token() }}"> --}}
-                        <input type="text" class="form-control form-input-nyadran" name="name" value="aji" id="name" placeholder="Nama">
+                        <input type="text" class="form-control form-input-nyadran" name="name" id="name" placeholder="Nama">
                         <label for="name_0">Nama Pengirim</label>
-                    </div>
-                    <div class="form-floating mt-4">
-                        <input type="text" class="form-control form-input-nyadran" name="address" value="kanggotan" id="address" placeholder="Alamat">
-                        <label for="address">Alamat Pengirim</label>
                     </div>
                     <div class="form-floating mt-4">
                         <input type="text" class="form-control form-input-nyadran" name="phone" id="phone" value="-" placeholder="Password">
                         <label for="phone">Nomer Pengirim ( jika ada )</label>
                     </div>
+                    <div class="form-floating mt-4">
+                        <input type="text" class="form-control form-input-nyadran" name="address" id="address" placeholder="Alamat">
+                        <label for="address">Alamat Pengirim</label>
+                    </div>
+                    
                     <div class="d-flex flex-row mt-4" id="input-arwah_0">
                         <div class="d-flex align-items-end">
                             <button class="btn-minus remove-row" type="button"><i class='bx icon-minus bxs-checkbox-minus'></i></button>
                         </div>
                         <div class="form-floating">
                             <select class="form-select form-input-nyadran" name="arwah_type[]" id="arwah_type_0">
-                                <option>Bp.</option>
-                                <option>Ibu.</option>
-                                <option>Sdr.</option>
+                                <option value="Bapak">Bp.</option>
+                                <option value="Ibu">Ibu.</option>
+                                <option value="Saudara">Sdr.</option>
                             </select>
                         </div>
                         <div class="d-flex align-items-center form-floating mx-2">
-                            <input type="text" class="form-control form-input-nyadran" name="arwah_name[]" id="arwah_name_0" value="bill gates" placeholder="Nama arwah">
+                            <input type="text" class="form-control form-input-nyadran" name="arwah_name[]" id="arwah_name_0"  placeholder="Nama arwah">
                             <label for="arwah_name_0">Nama Arwah</label>
                         </div>
                         <div class="d-flex align-items-center form-floating mx-1">
-                            <input type="text" class="form-control form-input-nyadran" name="arwah_address[]" id="arwah_adress_0" value="new york" placeholder="Alamat arwah">
+                            <input type="text" class="form-control form-input-nyadran" name="arwah_address[]" id="arwah_adress_0"  placeholder="Alamat arwah">
                             <label for="arwah_adress_0">Alamat Arwah</label>
                         </div>
                         
@@ -82,9 +83,6 @@
         </form>
     </main>
     @include('includes.public.js')
-    <script>
-        let urlPost = "{{asset('php/data.php')}}"
-    </script>
     <script src="{{asset('js/nyadran.js')}}"></script>
 </body>
 </html>

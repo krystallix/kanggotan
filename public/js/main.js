@@ -22,7 +22,7 @@ function Login() {
         }
     });
     $.ajax({
-        url: 'https://www.api.kanggotan.id/api/auth/login',
+        url: 'http://103.179.56.179/api/auth/login',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         },

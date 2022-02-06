@@ -4,3 +4,4 @@
 {{-- <script src="https://unpkg.com/tippy.js@6"></script> --}}
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/node-snackbar@latest/src/js/snackbar.min.js"></script>
 <script src="{{asset('js/main.js')}}"></script>
+<script src="https://pagination.js.org/dist/2.1.4/pagination.min.js"></script>
