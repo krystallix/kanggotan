@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-  user = sessionStorage.getItem('user')
+  user = Cookies.get('user')
   if(user == null ){
     window.location = '/'
   }
@@ -28,7 +28,7 @@ $(document).on("click", "#submit-input", function(){
     }
   });
   
-  token = sessionStorage.getItem('user')
+  token = Cookies.get('user')
   
   $.ajax({
     method: 'POST',

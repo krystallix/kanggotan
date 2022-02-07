@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("body").removeClass("hidden").hide().fadeIn(500);
-    user = sessionStorage.getItem('user')
+    user = Cookies.get('user')
     function redirect() {
         $(location).prop('href', '/')
     }

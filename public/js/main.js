@@ -39,7 +39,7 @@ function Login() {
                 showAction: false,
             });
             user = result.data.token
-            sessionStorage.setItem("user", user);
+            Cookies.set("user", user);
             setTimeout(redirect, 500);
         },
         error: function (result) {
@@ -93,13 +93,13 @@ $(document).ready(function () {
         }
     })
     
-    user = sessionStorage.getItem('user')
+    user = Cookies.get('user')
     if(user != null){
         LoggedIn()
     }
     
     $(document).on("click", "#logout-link", function(){
-        sessionStorage.removeItem('user')
+       Cookies.remove('user')
         $('#login-link').removeClass("d-none")
         $('#logout-link').addClass("d-none")
         $(location).prop('href', '/')
