@@ -238,8 +238,8 @@ body {
 }
 
 .pagination li a {
-    border-radius: 5px;
-    border: 0;
+    /* border-radius: 5px;
+    border: 0; */
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
