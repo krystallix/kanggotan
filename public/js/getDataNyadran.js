@@ -16,57 +16,38 @@ $.ajax(settings).done(function (response) {
         }
         
         data = response.data;
-        
-        // $(document).ready(function () {
-        //     $('#table-nyadran').DataTable({
-        // });
-        
-        console.log(data)
         nyadran_table = ""
         for (i = 0; i < data.length; i++) {
             nomer = i + 1
             if (i % 2 === 0) {
-                oddeven = 'even'
-            }
-            else {
                 oddeven = 'odd'
             }
-            nyadran_table += "<tr class='" + oddeven + "'><td>" + nomer + ".</td><td class='name-arwah'>" + toTitleCase(data[i].name) + "</td><td>" + toTitleCase(data[i].address) + "</td>"
+            else {
+                oddeven = 'even'
+            }
+            nyadran_table += "<div class='table-content'> <div class='d-flex "+ oddeven +"'> <div class='content-div w-5'>" + nomer + ".</div> <div class='content-div arwah-name'>"+ toTitleCase(data[i].name) + "</div> <div class='content-div'> "+ toTitleCase(data[i].address) + "</div>"
             for (k = 0; k < data[i].arwahs.length; k++) {
                 if (k > 0) {
-                    nyadran_table += "<tr class=" + oddeven + "><td></td><td class='transparent'>"+toTitleCase(data[i].name)+"</td><td></td><td>" + data[i].arwahs[k].arwah_type + ". " + toTitleCase(data[i].arwahs[k].arwah_name) + "</td><td>" + toTitleCase(data[i].arwahs[k].arwah_address) + "</td></tr>"
+                    nyadran_table += "<div class='d-flex "+ oddeven +"'> <div class='content-div w-5'></div> <div class='content-div arwah-name transparent'>"+ toTitleCase(data[i].name) + "</div> <div class='content-div'> </div> <div class='content-div'>"+ toTitleCase(data[i].arwahs[k].arwah_type) +"."+ toTitleCase(data[i].arwahs[k].arwah_name) +"</div> <div class='content-div'>"+ toTitleCase(data[i].arwahs[k].arwah_address) +"</div> </div>"
                 } else {
-                    nyadran_table += "<td>" + data[i].arwahs[k].arwah_type + ". " + toTitleCase(data[i].arwahs[k].arwah_name) + "</td><td>" + toTitleCase(data[i].arwahs[k].arwah_address) + "</td></tr>"
+                    nyadran_table += "<div class='content-div'>"+ toTitleCase(data[i].arwahs[k].arwah_type) +"."+ toTitleCase(data[i].arwahs[k].arwah_name) +"</div> <div class='content-div'>"+ toTitleCase(data[i].arwahs[k].arwah_address) +"</div></div>"
                 }
             }
+            nyadran_table += "</div>"
         }
-        $("#table-arwah").html(nyadran_table)
+        // for(i=0; i<4000; i++){
+            $("#table-header").after(nyadran_table)
+        // }
+        
     });
     
     $(document).ready(function(){
         $("#search-arwah").on("keyup", function() {
             var value = $(this).val().toLowerCase();
-            $("#table-arwah tr").filter(function() {
-                $(this).toggle($(this).find("td:eq(1)").text().toLowerCase().indexOf(value) > -1)
+            $(".table-content").filter(function() {
+                $(this).toggle($(this).find(".arwah-name").text().toLowerCase().indexOf(value) > -1)
             });
         });
         
        
     });
-    
-    
-    
-    //   $( document ).ajaxComplete(function( event, request, settings ) {
-    //     let rows = []
-    //     $('#table-nyadran tbody tr').each(function(i, row) {
-    //         return rows.push(row);
-    //     });
-        
-    //     $('#pagination').pagination({
-    //         dataSource: rows,
-    //         pageSize: 10,
-    //         callback: function(data, pagination) {
-    //             $('tbody').html(data);
-    //         }
-    //     })    
-    //   });

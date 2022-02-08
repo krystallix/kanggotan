@@ -148,19 +148,29 @@ body{
 .even{
     background-color: rgb(0 0 0 / 5%);
 }
-.transparent{
-    color: transparent;
-}
 
-  
-  #pagination {
+.header-div{
+    border-collapse: collapse;
+    border: 1px solid #373b3e;
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
     width: 100%;
-    text-align: center;
   }
   
-  #pagination ul li {
-    display: inline;
-    margin-left: 10px;
+  .content-div{
+    border-collapse: collapse;
+    border: 1px solid #dee2e6;
+    padding: 0.5rem;
+    color: #212529;
+    width: 100%;
+  }
+  .transparent{
+    color: transparent;
+}
+  
+  .w-5{
+    width: 10%;
   }
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

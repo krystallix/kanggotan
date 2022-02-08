@@ -19,20 +19,12 @@
         </div>
         
     </div>
-    <div class="mt-2 table-responsive">
-        <table class="table display table-bordered table-hover header-fixed" id="table-nyadran" width="100%">
-            <thead class="table-dark">
-                <th>No</th>
-                <th>Nama Pengirim</th>
-                <th>Alamat</th>
-                <th>Nama Arwah</th>
-                <th>Alamat Makam</th>
-            </thead>
-            <tbody id="table-arwah">
-                
-            </tbody>
-        </table>
-        <div id="pagination"></div>
+    <div class="d-flex mt-2" id="table-header">
+        <div class="header-div w-5">No.</div>
+        <div class="header-div"> Nama Pengirim</div>
+        <div class="header-div"> Alamat Pengirim</div>
+        <div class="header-div">Nama Arwah</div>
+        <div class="header-div"> Alamat Makam</div>
     </div>
 </div>
 
