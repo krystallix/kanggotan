@@ -1,22 +1,23 @@
 @font-face {
-    font-family: 'Metropolis';
-    
-    src: url('/fonts/Metropolis-Regular.woff2') format('woff2'),
-    url('/fonts/Metropolis-Regular.woff') format('woff');
+    font-family: "Metropolis";
+    src: url("/fonts/Metropolis-Regular.woff2") format("woff2"),
+    url("/fonts/Metropolis-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    font-family: 'Metropolis';
+    font-family: "Metropolis";
 }
-.hero{
+
+.hero {
     height: 500px;
 }
+
 .hero .background-image {
     position: absolute;
     top: 0;
@@ -33,9 +34,11 @@ body{
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
-.bg-white{
+
+.bg-white {
     background-color: white;
 }
+
 .hero-content-area {
     margin-top: 175px;
     height: 500px;
@@ -43,26 +46,31 @@ body{
 }
 
 .overlay-80:before {
-    opacity: .6;
+    opacity: 0.6;
 }
+
 .page-header-light {
     background-color: #eff3f9;
 }
+
 .overlay-light:before {
     border-radius: 60% / 30%;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    background-color: #ffffff!important;
+    background-color: #ffffff !important;
 }
-.title-header{
+
+.title-header {
     margin-bottom: 0.5rem;
     font-weight: 700;
     line-height: 1.2;
     color: #232c3a;
 }
-.overlay{
+
+.overlay {
     position: relative;
 }
+
 .overlay:before {
     content: "";
     position: absolute;
@@ -71,154 +79,240 @@ body{
     right: 0;
     bottom: 0;
     background-color: #000;
-    /* opacity: .5; */
+    /* opacity      : .5; */
 }
-.icon-size{
+
+.icon-size {
     font-size: 1.5rem;
 }
-.desc-header{
+
+.desc-header {
     color: rgb(56, 56, 56);
 }
-.bx-nolineh{
+
+.bx-nolineh {
     line-height: 1.6 !important;
 }
-.con-nav{
+
+.con-nav {
     max-width: 1320px;
 }
-.icon-sosial{
+
+.icon-sosial {
     color: black;
 }
-.icon-sosial:hover{
+
+.icon-sosial:hover {
     color: rgb(0, 153, 255);
 }
-.icon-add{
+
+.icon-add {
     font-size: 2rem;
     color: rgb(194, 194, 194);
 }
-.icon-add:hover{
+
+.icon-add:hover {
     color: rgb(0, 102, 255);
 }
-.icon-minus{
+
+.icon-minus {
     font-size: 1rem;
     color: rgb(194, 194, 194);
 }
-.icon-minus:hover{
+
+.icon-minus:hover {
     color: rgb(223, 75, 49);
 }
-.desc-size{
+
+.desc-size {
     color: rgb(104, 104, 104);
     font-size: 1rem;
 }
-.image_gallery{
+
+.image_gallery {
     height: 400px;
 }
-.vh-75{
+
+.vh-75 {
     height: 75vh;
 }
-.ml-1{
+
+.ml-1 {
     margin-left: 0.25rem !important;
 }
-.mr-1{
+
+.mr-1 {
     margin-right: 0.25rem !important;
 }
-.card-from{
+
+.card-from {
     border-radius: 10px;
     background-color: white;
-    box-shadow: -2px 5px 15px -1px rgba(130,130,130,0.75);
-    -webkit-box-shadow: -2px 5px 15px -1px rgba(130,130,130,0.75);
-    -moz-box-shadow: -2px 5px 15px -1px rgba(130,130,130,0.75);
+    box-shadow: -2px 5px 15px -1px rgba(130, 130, 130, 0.75);
+    -webkit-box-shadow: -2px 5px 15px -1px rgba(130, 130, 130, 0.75);
+    -moz-box-shadow: -2px 5px 15px -1px rgba(130, 130, 130, 0.75);
 }
-.link-top{
+
+.link-top {
     color: rgb(104, 104, 104);
     text-decoration: none;
 }
-.link-top:hover{
+
+.link-top:hover {
     color: rgb(0, 102, 255);
 }
 
-.mtt-5{
+.mtt-5 {
     margin-top: 3rem;
 }
+
 .navbar-light .navbar-toggler {
     border: 0;
 }
-.odd{
+
+.odd {
     background-color: transparent;
 }
-.even{
+
+.even {
     background-color: rgb(0 0 0 / 5%);
 }
 
-.header-div{
+.header-div {
     border-collapse: collapse;
     border: 1px solid #373b3e;
     color: white;
     background-color: black;
     padding: 0.5rem;
-    width: 100%;
-  }
-  
-  .content-div{
+    width: 23.75%;
+}
+
+.content-div {
     border-collapse: collapse;
     border: 1px solid #dee2e6;
     padding: 0.5rem;
     color: #212529;
-    width: 100%;
-  }
-  .transparent{
+    width: 23.75%;
+}
+
+.transparent {
     color: transparent;
 }
-  
-  .w-5{
-    width: 10%;
-  }
+
+.w-5 {
+    width: 5%;
+}
+
+.h7 {
+    font-size: small;
+}
+
+.table-content {
+    height: 63.5vh;
+    overflow-y: auto;
+    max-height: 63.5vh;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: block;
+    width: 960px;
+}
+.pagination li {
+    display: inline
+}
+.pagination li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #000
+}
+
+.pagination {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.disabled{
+    cursor: not-allowed;
+}
+
+.pagination li a {
+    border-radius: 5px;
+    border: 0;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.pagination li a.active-pagination {
+    background-color: #2692da;
+    color: #fff;
+}
+
+.pagination li a:hover:not(.active-pagination) {
+    background-color: #ddd;
+}
+
 /* // Extra small devices (portrait phones, less than 576px) */
+
 @media (max-width: 575.98px) {
-    .hero{
+    .hero {
         height: 400px;
     }
-    body{
+    
+    body {
         overflow-x: hidden;
     }
+    
     .hero .background-image {
         height: 400px;
         border-radius: 0;
     }
+    
     .overlay-light:before {
         border-radius: 0;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        background-color: #ffffff!important;
+        background-color: #ffffff !important;
     }
-    .mtt-5{
+    
+    .mtt-5 {
         margin-top: 1.5rem;
     }
-    .image_gallery{
+    
+    .image_gallery {
         height: 75px;
     }
-    .desc-size{
+    
+    .desc-size {
         font-size: 0.75rem;
     }
-    .table{
+    
+    .content-div {
         font-size: x-small;
-    }    
+    }
+    
+    .header-div {
+        font-size: x-small;
+    }
 }
 
-
-
 /* // Small devices (landscape phones, 576px and up) */
+
 @media (min-width: 576px) and (max-width: 767.98px) {
-    
-    
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    
+
+@media (min-width: 768px) and (max-width: 991.98px) {
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+
+@media (min-width: 1200px) {
+}

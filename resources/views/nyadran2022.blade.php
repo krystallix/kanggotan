@@ -8,6 +8,7 @@
             <span class="h5">
                 Haul Massal 2022 
             </span>
+            <p class="h7" id="stats"></p>
         </div>
         <div class="search">
             <div class="input-group ">
@@ -21,10 +22,17 @@
     </div>
     <div class="d-flex mt-2" id="table-header">
         <div class="header-div w-5">No.</div>
-        <div class="header-div"> Nama Pengirim</div>
-        <div class="header-div"> Alamat Pengirim</div>
+        <div class="header-div">Nama Pengirim</div>
+        <div class="header-div">Alamat Pengirim</div>
         <div class="header-div">Nama Arwah</div>
-        <div class="header-div"> Alamat Makam</div>
+        <div class="header-div">Alamat Makam</div>
+    </div>
+    <div id="table-content" class="table-content">
+        
+    </div>
+    <div class="d-flex flex-row justify-content-center mt-4">
+        <div class="pagination">
+        </div>
     </div>
 </div>
 
