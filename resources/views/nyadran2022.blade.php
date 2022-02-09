@@ -30,8 +30,14 @@
     <div id="table-content" class="table-content">
         
     </div>
-    <div class="d-flex flex-row justify-content-center mt-4">
+    <div class="d-flex flex-row justify-content-between mt-4">
+        <div></div>
         <div class="pagination">
+        </div>
+        <div>
+            <span id='download-file' data-toggle="tooltip" data-placement="top" title="Download table" class="import-btn">
+                <i class='bx bx-sm bx-import'></i>
+            </span>
         </div>
     </div>
 </div>

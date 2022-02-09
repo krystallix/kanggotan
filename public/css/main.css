@@ -253,6 +253,13 @@ body {
     background-color: #ddd;
 }
 
+.import-btn{
+    cursor: pointer;
+}
+.import-btn:hover{
+    cursor: pointer;
+    color: #2692da;
+}
 /* // Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {

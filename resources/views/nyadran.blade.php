@@ -25,11 +25,22 @@
                 </div>
                 
                 <div class="form-login">
-                    <div class="form-floating" >
-                        {{-- <input type="hidden" name="_token" value="{{ csrf_token() }}"> --}}
-                        <input type="text" class="form-control form-input-nyadran" name="name" id="name" placeholder="Nama">
-                        <label for="name_0">Nama Pengirim</label>
+                    <div class="name-input d-flex flex-row">
+                        {{-- <div class="form-floating">
+                            <select class="form-select form-input-nyadran" name="sender_type" id="arwah_type_0">
+                                <option value="Bp.">Bp.</option>
+                                <option value="Ibu.">Ibu.</option>
+                                <option value="Sdr.">Sdr.</option>
+                                <option value="Adik">Adik.</option>
+                            </select>
+                        </div> --}}
+                        <div class="form-floating mx-2 w-100"  >
+                            {{-- <input type="hidden" name="_token" value="{{ csrf_token() }}"> --}}
+                            <input type="text" class="form-control form-input-nyadran " name="name" id="name" placeholder="Nama">
+                            <label for="name_0">Nama Pengirim</label>
+                        </div>
                     </div>
+                    
                     <div class="form-floating mt-4">
                         <input type="text" class="form-control form-input-nyadran" name="phone" id="phone" value="-" placeholder="Password">
                         <label for="phone">Nomer Pengirim ( jika ada )</label>
